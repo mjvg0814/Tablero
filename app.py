@@ -33,7 +33,7 @@ st.markdown(
     }
 
     .stSlider, .stSelectbox, .stColorPicker {
-        background-color: #FFF0F5;
+        background-color: #eebb78;
         border-radius: 10px;
         padding: 6px 12px;
     }
