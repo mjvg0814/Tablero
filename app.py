@@ -60,7 +60,7 @@ with st.sidebar:
     )
     stroke_width = st.slider("Ancho del trazo", 1, 30, 10)
     stroke_color = st.color_picker("Color del trazo", "#FF5733")
-    bg_color = "#FDEBD0"  # fondo pastel cálido
+    bg_color = "#eebb78"  # fondo pastel cálido
 
 # Lienzo con espacio extra y configuración ideal
 st.markdown('<div class="canvas-container">', unsafe_allow_html=True)
