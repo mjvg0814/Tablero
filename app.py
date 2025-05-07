@@ -27,7 +27,7 @@ st.markdown(
     }
 
     .sidebar {
-        background-color: #FAEBD7;
+        background-color: #eebb78;
         border-radius: 12px;
         padding: 20px 10px;
     }
