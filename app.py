@@ -67,14 +67,14 @@ with st.sidebar:
         ("freedraw", "line", "rect", "circle", "transform", "polygon", "point")
     )
     stroke_width = st.slider("Ancho del trazo", 1, 30, 10)
-    stroke_color = st.color_picker("Color del trazo", "#A569BD")
+    stroke_color = st.color_picker("Color del trazo", "#FF689D")
     bg_color = "#FDF7FF"  # fondo suave y morado pastel
 
 # Lienzo con espacio extra y configuración ideal
 st.markdown('<div class="canvas-container">', unsafe_allow_html=True)
 
 canvas_result = st_canvas(
-    fill_color="rgba(169,105,189,0.2)",  # morado pastel translúcido
+    fill_color="#FFFFFFF",  # morado pastel translúcido
     stroke_width=stroke_width,
     stroke_color=stroke_color,
     background_color=bg_color,
