@@ -43,15 +43,7 @@ st.markdown(
         to {opacity: 1;}
     }
 
-    .canvas-container {
-        display: flex;
-        justify-content: center;
-        padding: 30px;
-        background-color: #FFE4E1;
-        border-radius: 18px;
-        animation: fadeIn 1.5s ease-in;
-        box-shadow: 0 0 20px #f3c6d9;
-    }
+    
     </style>
 
     <div class="main-title"> Tablero Creativo </div>
