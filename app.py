@@ -15,7 +15,7 @@ st.markdown(
         font-size: 48px;
         color: #FF5733;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: -20px;
         animation: fadeIn 2s ease-in-out;
     }
 
