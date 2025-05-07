@@ -13,7 +13,7 @@ st.markdown(
 
     .main-title {
         font-size: 48px;
-        color: #FF689D;
+        color: #FF5733;
         text-align: center;
         margin-bottom: 20px;
         animation: fadeIn 2s ease-in-out;
@@ -23,19 +23,19 @@ st.markdown(
     .sidebar .stSlider label,
     .sidebar .stColorPicker label {
         font-size: 16px;
-        color: #8C4966;
+        color: #333333;
     }
 
     .sidebar {
-        background-color: #FFFFFF;
-        border-radius: 10px;
+        background-color: #FAEBD7;
+        border-radius: 12px;
         padding: 20px 10px;
     }
 
     .stSlider, .stSelectbox, .stColorPicker {
-        background-color: #FFFFFF;
-        border-radius: 8px;
-        padding: 5px 10px;
+        background-color: #FFF0F5;
+        border-radius: 10px;
+        padding: 6px 12px;
     }
 
     @keyframes fadeIn {
@@ -46,15 +46,15 @@ st.markdown(
     .canvas-container {
         display: flex;
         justify-content: center;
-        padding: 20px;
-        background-color: #FFFFFF;
-        border-radius: 20px;
+        padding: 30px;
+        background-color: #FFE4E1;
+        border-radius: 18px;
         animation: fadeIn 1.5s ease-in;
-        box-shadow: 0 0 15px #e3d4f0;
+        box-shadow: 0 0 20px #f3c6d9;
     }
     </style>
 
-    <div class="main-title"> Tablero Interactivo </div>
+    <div class="main-title"> Tablero Creativo </div>
     """,
     unsafe_allow_html=True
 )
@@ -67,14 +67,14 @@ with st.sidebar:
         ("freedraw", "line", "rect", "circle", "transform", "polygon", "point")
     )
     stroke_width = st.slider("Ancho del trazo", 1, 30, 10)
-    stroke_color = st.color_picker("Color del trazo", "#FF689D")
-    bg_color = "#FDF7FF"  # fondo suave y morado pastel
+    stroke_color = st.color_picker("Color del trazo", "#FF5733")
+    bg_color = "#FDEBD0"  # fondo pastel cálido
 
 # Lienzo con espacio extra y configuración ideal
 st.markdown('<div class="canvas-container">', unsafe_allow_html=True)
 
 canvas_result = st_canvas(
-    fill_color="#FFFFFFF",  # morado pastel translúcido
+    fill_color="#FFFFFFF",  # fondo blanco cálido
     stroke_width=stroke_width,
     stroke_color=stroke_color,
     background_color=bg_color,
@@ -85,4 +85,3 @@ canvas_result = st_canvas(
 )
 
 st.markdown('</div>', unsafe_allow_html=True)
-
