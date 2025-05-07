@@ -23,7 +23,7 @@ st.markdown(
     .sidebar .stSlider label,
     .sidebar .stColorPicker label {
         font-size: 16px;
-        color: #333333;
+        color: #000000;
     }
 
     .sidebar {
