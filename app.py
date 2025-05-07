@@ -13,7 +13,7 @@ st.markdown(
 
     .main-title {
         font-size: 48px;
-        color: #9B59B6;
+        color: #FF689D;
         text-align: center;
         margin-bottom: 20px;
         animation: fadeIn 2s ease-in-out;
@@ -23,17 +23,17 @@ st.markdown(
     .sidebar .stSlider label,
     .sidebar .stColorPicker label {
         font-size: 16px;
-        color: #6C3483;
+        color: #8C4966;
     }
 
     .sidebar {
-        background-color: #F8F0FB;
+        background-color: #FFFFFF;
         border-radius: 10px;
         padding: 20px 10px;
     }
 
     .stSlider, .stSelectbox, .stColorPicker {
-        background-color: #F4ECF7;
+        background-color: #FFFFFF;
         border-radius: 8px;
         padding: 5px 10px;
     }
@@ -47,21 +47,21 @@ st.markdown(
         display: flex;
         justify-content: center;
         padding: 20px;
-        background-color: #FDF7FF;
+        background-color: #FFFFFF;
         border-radius: 20px;
         animation: fadeIn 1.5s ease-in;
         box-shadow: 0 0 15px #e3d4f0;
     }
     </style>
 
-    <div class="main-title">🎨Tablero Mágico interactivo🎨 </div>
+    <div class="main-title"> Tablero Interactivo </div>
     """,
     unsafe_allow_html=True
 )
 
 # Configuración del tablero en la barra lateral
 with st.sidebar:
-    st.markdown("### 💜 Personaliza tu experiencia")
+    st.markdown("### Personaliza tu experiencia")
     drawing_mode = st.selectbox(
         "Herramienta de dibujo:",
         ("freedraw", "line", "rect", "circle", "transform", "polygon", "point")
